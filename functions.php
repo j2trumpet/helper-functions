@@ -34,4 +34,11 @@ if ( !function_exists( 'jp_dummy_image' ) ) {
   }
 }
 
+// Images path
+if ( !function_exists( 'jp_image_path' ) ) :
+  function jp_image_path( $file ) {
+    return get_stylesheet_directory_uri() . '/assets/images/' . $file;
+  }
+endif;
+
 ?>
